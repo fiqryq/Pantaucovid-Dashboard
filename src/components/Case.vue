@@ -4,9 +4,7 @@
       <h2 class="mb-1 text-3xl font-extrabold leading-tight text-gray-900">
         Kasus Di indonesia
       </h2>
-      <p class="mb-10 text-lg text-gray-500">
-        Data update :
-      </p>
+      <p class="mb-10 text-lg text-gray-500">Data update : {{ update }}</p>
       <div
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-16 lg:gap-x-24 gap-y-20"
       >
@@ -37,7 +35,7 @@
           <h1
             class="mb-2 text-base font-bold leading-tight text-gray-600 lg:text-lg kasus"
           >
-            0
+            {{ positif }}
           </h1>
         </div>
 
@@ -74,7 +72,7 @@
           <h1
             class="mb-2 text-base font-bold leading-tight text-gray-600 lg:text-lg kasus"
           >
-            1.000.000
+            {{ sembuh }}
           </h1>
         </div>
 
@@ -105,7 +103,7 @@
           <h1
             class="mb-2 text-base font-bold leading-tight text-gray-600 lg:text-lg kasus"
           >
-            1.000.000
+            {{ meninggal }}
           </h1>
         </div>
       </div>
@@ -113,6 +111,32 @@
   </section>
 </template>
 
+<script>
+import Vue from "vue";
+import axios from "axios";
+import VueAxios from "vue-axios";
+Vue.use(VueAxios, axios);
+export default {
+  data() {
+    return {
+      positif: null,
+      meninggal: null,
+      sembuh: null,
+      update: null
+    };
+  },
+  mounted() {
+    Vue.axios
+      .get("https://covid19.mathdro.id/api/countries/ID")
+      .then(response => {
+        this.positif = response.data.confirmed.value;
+        this.sembuh = response.data.recovered.value;
+        this.meninggal = response.data.deaths.value;
+        this.update = response.data.lastUpdate;
+      });
+  }
+};
+</script>
 <style scoped>
 .kasus {
   font-size: 2.5rem;
