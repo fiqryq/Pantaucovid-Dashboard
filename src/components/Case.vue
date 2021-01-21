@@ -27,7 +27,7 @@
           <h1
             class="mb-2 text-base font-bold leading-tight text-gray-600 lg:text-lg kasus"
           >
-            {{ positif }}
+            {{ numberFormat(positif) }}
           </h1>
         </div>
 
@@ -48,7 +48,7 @@
           <h1
             class="mb-2 text-base font-bold leading-tight text-gray-600 lg:text-lg kasus"
           >
-            {{ sembuh }}
+            {{ numberFormat(sembuh) }}
           </h1>
         </div>
 
@@ -66,7 +66,7 @@
           <h1
             class="mb-2 text-base font-bold leading-tight text-gray-600 lg:text-lg kasus"
           >
-            {{ meninggal }}
+            {{ numberFormat(meninggal) }}
           </h1>
         </div>
       </div>
@@ -80,6 +80,11 @@ import axios from "axios";
 import VueAxios from "vue-axios";
 Vue.use(VueAxios, axios);
 export default {
+  methods: {
+    numberFormat(number) {
+      return number.toLocaleString("id-ID")
+    }
+  },
   data() {
     return {
       positif: null,
