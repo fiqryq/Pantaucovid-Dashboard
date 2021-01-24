@@ -78,6 +78,8 @@
 import Vue from "vue";
 import axios from "axios";
 import VueAxios from "vue-axios";
+import common from '@/util/common.js'
+
 Vue.use(VueAxios, axios);
 export default {
   methods: {
@@ -100,7 +102,7 @@ export default {
         this.positif = response.data.confirmed.value;
         this.sembuh = response.data.recovered.value;
         this.meninggal = response.data.deaths.value;
-        this.update = response.data.lastUpdate;
+        this.update = common.convertStrDateToPattern(response.data.lastUpdate,'LLLL ','id-ID');
       });
   }
 };
