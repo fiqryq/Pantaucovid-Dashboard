@@ -89,9 +89,9 @@ export default {
   },
   data() {
     return {
-      positif: null,
-      meninggal: null,
-      sembuh: null,
+      positif: 0,
+      meninggal: 0,
+      sembuh: 0,
       update: null
     };
   },
