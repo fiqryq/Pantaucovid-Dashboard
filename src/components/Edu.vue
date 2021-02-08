@@ -1,85 +1,58 @@
 <template>
-  <div id="edukasi">
-    <section class="py-20 bg-gray-50">
+  <section
+    class="box-border relative block pt-16 overflow-hidden leading-6 text-left text-white bg-black bg-no-repeat bg-cover sm:pt-20 md:pt-24"
+  >
+    <div class="w-full max-w-5xl px-8 mx-auto leading-6 text-left xl:px-0">
       <div
-        class="container items-center max-w-6xl px-4 px-10 mx-auto sm:px-20 md:px-32 lg:px-16"
+        class="box-border flex flex-wrap items-center justify-center flex-1 text-center text-white lg:text-left"
       >
-        <div class="flex flex-wrap items-center -mx-3">
-          <div class="order-1 w-full px-3 lg:w-1/2 lg:order-0">
-            <div class="w-full lg:max-w-md">
-              <h2
-                class="mb-4 text-3xl font-bold leading-tight tracking-tight sm:text-4xl font-heading"
-                data-aos="fade-right"
-                data-aos-duration="1800"
-              >
-                Cegah covid dengan menggunakan 3M.
-              </h2>
-              <p
-                class="mb-4 font-medium tracking-tight text-gray-400 xl:mb-6"
-                data-aos="fade-right"
-                data-aos-duration="1800"
-              >
-                Penyebaran virus Corona atau COVID-19 di Indonesia harus ditekan
-                semaksimal mungkin. Salah satu cara utamanya adalah dengan
-                menerapkan perilaku hidup disiplin. Maka, selalu #ingatpesanibu
-                dengan melakukan langkah 3M sebagai upaya mencegah sekaligus
-                memutus rantai penularan COVID-19.
-              </p>
-              <ul>
-                <li
-                  class="flex items-center py-2 space-x-4 xl:py-3"
-                  data-aos="fade-up"
-                  data-aos-duration="1400"
-                >
-                  <img src="../assets/illustration/masker.svg" class="eduimg" />
-                  <span class="font-medium text-gray-500">Memakai masker</span>
-                </li>
-                <li
-                  class="flex items-center py-2 space-x-4 xl:py-3"
-                  data-aos="fade-up"
-                  data-aos-duration="1600"
-                >
-                  <img
-                    src="../assets/illustration/Hand Wash.svg"
-                    class="eduimg"
-                  />
-                  <span class="font-medium text-gray-500">Mencuci tangan</span>
-                </li>
-                <li
-                  class="flex items-center py-2 space-x-4 xl:py-3"
-                  data-aos="fade-up"
-                  data-aos-duration="1800"
-                >
-                  <img
-                    src="../assets/illustration/socialdistance.svg"
-                    class="eduimg"
-                  />
-                  <span class="font-medium text-gray-500"
-                    >Menjaga jarak dan menghindari kerumunan</span
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div
-            class="w-full px-3 mb-12 lg:w-1/2 order-0 lg:order-1 lg:mb-0"
-            data-aos="fade-up"
-            data-aos-duration="1800"
+        <div
+          class="relative w-full px-4 leading-6 text-left lg:w-7/12 xl:w-1/2"
+        >
+          <h2
+            class="box-border mx-0 mt-0 mb-5 font-sans text-4xl font-bold text-white"
           >
-            <img
-              class="mx-auto sm:max-w-sm lg:max-w-full"
-              src="../assets/illustration/3m.svg"
-              alt="feature image"
-            />
+            Discord bot Pantaucovid.
+          </h2>
+          <div class="box-border pr-10 text-left text-gray-300">
+            invite bot Pantaucovid untuk mendapatkan informasi seputar covid19
+            di discord.
           </div>
         </div>
+        <div
+          class="relative flex flex-col w-full px-4 mt-10 leading-6 text-left md:flex-row lg:w-5/12 xl:w-1/2 justifty-end"
+        >
+          <a
+            href="https://discord.com/oauth2/authorize?client_id=804315303801520218&scope=bot"
+            class="box-border inline-flex items-center justify-center w-full h-16 px-10 py-0 mb-8 text-xl font-semibold text-center text-white no-underline align-middle bg-blue-600 border border-transparent border-solid rounded-full cursor-pointer select-none md:mb-0 md:mr-8 md:w-auto lg:px-7 xl:px-10 hover:bg-blue-800 focus:shadow-xs focus:no-underline"
+          >
+            Invite bot
+          </a>
+        </div>
       </div>
-    </section>
-  </div>
+      <div
+        class="box-border flex flex-wrap justify-center max-w-5xl mx-auto mt-8 text-white md:mt-20"
+      >
+        <div
+          class="relative w-full px-4 leading-6 text-left xl:flex-grow-0 xl:flex-shrink-0"
+        >
+          <div
+            class="rounded-t-xl h-10 bg-gray-900 flex items-center space-x-1.5 justify-start relative overflow-hidden"
+          >
+            <div
+              class="relative z-10 w-3 h-3 ml-3 bg-red-700 rounded-full"
+            ></div>
+            <div class="relative z-10 w-3 h-3 bg-yellow-700 rounded-full"></div>
+            <div class="relative z-10 w-3 h-3 bg-green-700 rounded-full"></div>
+          </div>
+
+          <img
+            src="https://raw.githubusercontent.com/Suncodeid/assets-image/0335df99b9b93ae541fbc389c23240cdd885cec2/Pantaucovid.svg"
+            alt=""
+            class="box-border h-auto max-w-full text-white align-middle border-none"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
-<style scope>
-.eduimg {
-  width: 28px;
-  height: 28px;
-}
-</style>

@@ -1,60 +1,30 @@
 <template>
-  <div>
-    <section class="block py-24 leading-7 text-left text-gray-900 bg-white">
-      <div
-        class="relative w-full px-5 px-8 mx-auto leading-7 text-gray-900 max-w-7xl lg:px-16 xl:px-32"
+  <div class="py-20 bg-black">
+    <div class="px-4 mx-auto text-center max-w-7xl sm:px-6 lg:px-8">
+      <h2
+        class="text-3xl font-extrabold tracking-tight text-blue-600 sm:text-4xl md:text-5xl xl:text-6xl"
       >
-        <div class="flex flex-col flex-wrap items-center text-left md:flex-row">
-          <div
-            class="flex-1 opacity-100 xl:pr-12 transform-none"
-            data-aos="fade-right"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-duration="2000"
-          >
-            <h1
-              class="box-border mt-0 text-4xl font-normal tracking-tight text-center text-gray-900 sm:text-5xl md:text-4xl lg:text-5xl mb-7 md:text-left"
-            >
-              Selamat datang di pantau<span class="text-blue-600">covid</span>
-            </h1>
-
-            <!-- Text -->
-            <p
-              class="box-border mt-0 mb-8 text-base font-normal text-center text-gray-500 lg:text-xl md:text-left lg:mb-8"
-            >
-              ini adalah website untuk melihat kasus covid di indonesia.
-            </p>
-
-            <!-- Buttons -->
-            <div
-              class="box-border leading-7 text-center text-gray-900 md:text-left"
-            >
-              <a
-                href="#kasus"
-                v-smooth-scroll="{ duration: 1500 }"
-                class="inline-block w-full px-5 py-3 mb-3 mr-1 text-base font-semibold text-white no-underline align-middle bg-blue-600 border border-transparent border-solid rounded-md cursor-pointer select-none sm:mb-0 sm:w-auto hover:bg-blue-700 hover:border-blue-700 hover:text-white focus-within:bg-blue-700 focus-within:border-blue-700"
-              >
-                Kasus
-              </a>
-              <a
-                href="#edukasi"
-                v-smooth-scroll="{ duration: 1500 }"
-                class="inline-block w-full px-5 py-3 text-base font-semibold text-blue-600 no-underline align-middle bg-purple-100 border border-transparent border-solid rounded-md cursor-pointer select-none sm:w-auto hover:bg-indigo-100 hover:text-blue-600 focus-within:bg-indigo-100 focus-within:text-blue-600"
-              >
-                Edukasi
-              </a>
-            </div>
-          </div>
-
-          <div
-            class="relative flex justify-center flex-1 w-full px-5 mt-16 leading-7 text-gray-900 md:justify-end md:mt-0"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-          >
-            <!-- Image -->
-            <img src="../assets/illustration/wfh.svg" class="w-full max-w-md" />
-          </div>
+        Pantaucovid.
+      </h2>
+      <p
+        class="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl"
+      >
+        web dashboard informasi covid19 di indonesia.
+      </p>
+    </div>
+    <div
+      class="bg-gray-200 max-w-xl mx-auto mt-5 items-center p-2 rounded-xl shadow"
+    >
+      <div class="flex-grow p-3">
+        <div class="font-semibold text-gray-700 mb-3">
+          COVID-19 (coronavirus disease 2019) adalah penyakit yang disebabkan
+          oleh jenis coronavirus baru yaitu Sars-CoV-2, yang dilaporkan pertama
+          kali di Wuhan Tiongkok pada tanggal 31 Desember 2019.
+        </div>
+        <div class="text-sm text-gray-500">
+          Sumber data : http://www.padk.kemkes.go.id/
         </div>
       </div>
-    </section>
+    </div>
   </div>
 </template>
