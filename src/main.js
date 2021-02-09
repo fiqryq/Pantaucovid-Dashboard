@@ -2,6 +2,7 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import "./assets/style/tailwind.css";
+
 // Vuesax
 import Vuesax from "vuesax";
 import "vuesax/dist/vuesax.css";
