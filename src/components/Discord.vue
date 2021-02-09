@@ -47,7 +47,7 @@
           </div>
 
           <img
-            src="https://raw.githubusercontent.com/Suncodeid/assets-image/0335df99b9b93ae541fbc389c23240cdd885cec2/Pantaucovid.svg"
+            src="https://raw.githubusercontent.com/Suncodeid/assets-image/7faf66b48ee7fed7a8d0157f9cdfeb58eeca8b66/discord%20background.svg"
             alt=""
             class="box-border h-auto max-w-full text-white align-middle border-none"
           />

@@ -10,7 +10,7 @@
       <Vaksin />
     </div>
     <div class="edu">
-      <Edu />
+      <Discord />
     </div>
     <div class="footer">
       <Footer />
@@ -22,14 +22,14 @@
 import Heroes from "./components/Heroes.vue";
 import Vaksin from "./components/Vaksin.vue";
 import Case from "./components/Case.vue";
-import Edu from "./components/Edu.vue";
+import Discord from "./components/Discord.vue";
 import Footer from "./components/Footer";
 export default {
   components: {
     Heroes,
     Vaksin,
     Case,
-    Edu,
+    Discord,
     Footer
   }
 };

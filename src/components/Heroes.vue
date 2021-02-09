@@ -10,6 +10,7 @@
         class="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl"
       >
         web dashboard informasi covid19 di indonesia.
+        <span class="text-red-600">(maintenance)</span>
       </p>
     </div>
     <div
