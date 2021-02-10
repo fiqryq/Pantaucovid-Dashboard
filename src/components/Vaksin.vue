@@ -101,7 +101,7 @@ import axios from "axios";
 import VueAxios from "vue-axios";
 
 Vue.use(VueAxios, axios);
-const url = "https://pantaucovidvaksin.netlify.app/.netlify/functions/index";
+const url = "https://api-pantaucovid.herokuapp.com/";
 
 export default {
   data() {
@@ -115,6 +115,7 @@ export default {
   },
   mounted() {
     Vue.axios.get(url).then(response => {
+      console.log(response.data);
       this.totalsasaran = response.data[0].value;
       this.sasaransdmk = response.data[1].value;
       this.regisulang = response.data[2].value;
